@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+  /* background-color: #e7e8ec; */
+}
+.body{
+  background-color: white;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li,a{
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px 10%;
+  background-color: rgb(255, 255, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+}
+.navlink{
+  list-style: none;
+  padding-left: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navlink li{
+  display: inline-block;
+  padding: 0px 20px;
+} 
+
+.navlink li a{
+  transition: all 0.3s 0s;
+  font-size: 20px;
+}
+
+.navlink li a:hover{
+  color: cornflowerblue;
+}
+
+.button{
+  background: #2E186A;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 1000px;
+  border: 0px;
+  border-radius: 8px;
+  height: 60px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 0.625rem;
+  max-width: 180px;
+}
+
+.button2{
+  background: #fff;
+  color: #2E186A;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 1000px;
+
+  border-radius: 8px;
+  height: 60px;
+  outline: #2E186A, 1px;
+  cursor: pointer;
+  margin-top: 0.625rem;
+  max-width: 180px;
+}
+
+.buttonIn{
+  display: flex;
+  list-style: none;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 0px;
+}
+
+.intro{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: initial;
+  width: 1000px;
+  padding-top: 160px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.c1 img{
+  padding-top: 100px;
+  width: auto;
+  height: 500px;
+}
+
+.about{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+
+  text-align: center;
+  padding-top: 160px;
+}
+
+.c3 img{
+  padding-top: 50px;
+  width: auto;
+  height: 500px;
+}
+
+.gallery{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  padding-top: 160px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.content1{
+  display: flex;
+  flex-direction: row;
+}
+
+.c2{
+  display: flex;
+  list-style: none;
+}
+
+.c2 img{
+  padding-top: 50px;
+  width: auto;
+  height: 400px;
+}
+
+.contact{ 
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.contactIn{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: initial;
+  width: 1000px;
+  padding-left: 160px;
+  padding-top: 160px;
+}
+
+.form{
+  padding: 160px;
+  display: inline-block;
+}
+
+.input{
+  margin: 20px;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  outline: none;
+  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.3s ease-in;
+  border-radius: 8px;
+  color: #000;
+}
+
+.textarea{
+  margin: 20px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  resize: none;
+  font-size: 0.875rem;
+  height: 185px;
+  transition: border-color 0.3s ease-in;
 }
